@@ -1,0 +1,46 @@
+{
+  "name": "storybook-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "clean": "rm dist/bundle.js",
+    "start": "parcel src/index.html",
+    "build-prod": "parcel build src/index.html",
+    "test": "jest",
+    "storybook": "start-storybook -p 6006 --no-dll",
+    "build-storybook": "build-storybook --no-dll"
+  },
+  "dependencies": {
+    "@storybook/addon-knobs": "^6.0.28",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "styled-components": "^5.2.1",
+    "tailwindcss": "^1.9.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "@storybook/addon-actions": "^6.0.28",
+    "@storybook/addon-essentials": "^6.0.28",
+    "@storybook/addon-links": "^6.0.28",
+    "@storybook/react": "^6.0.28",
+    "@types/classnames": "^2.2.11",
+    "@types/react": "^16.9.56",
+    "@types/react-dom": "^16.9.9",
+    "@types/styled-components": "^5.1.4",
+    "autoprefixer": "^9.8.6",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^8.2.1",
+    "jest": "^26.6.3",
+    "parcel-bundler": "^1.12.4",
+    "postcss-modules": "^3.2.2",
+    "prettier": "^2.1.2",
+    "react-is": "^17.0.1",
+    "typescript": "^4.0.5"
+  }
+}
